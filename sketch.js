@@ -62,7 +62,7 @@ println(lastUpdated);
 var hourUpdated=lastUpdated.substring(lastUpdated.length-8,lastUpdated.length-6);
 var minUpdated=lastUpdated.substring(lastUpdated.length-5,lastUpdated.length-3);
 var secUpdated=lastUpdated.substring(lastUpdated.length-2,lastUpdated.length);
-if(int(hourUpdated)>12){hourUpdated=int(hourUpdated)-12;}
+if(int(hourUpdated)>(12+8)){hourUpdated=int(hourUpdated)-12;}
 lastUpdated=dateUpdated+" at " +(int(hourUpdated)+8-12)+":"+minUpdated+":"+secUpdated +" EST";
 //maxValue=newData.getColumn(1)[3];
 }
