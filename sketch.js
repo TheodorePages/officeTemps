@@ -29,7 +29,7 @@ lastTimer=millis();
 }
 //text("Just Posted: "+lastValue,width/2,height*1/4);
 textSize(width/50);
-text("Current Office Temperature\n ",width/2,height*3/8);
+text("Current Home Temperature\n ",width/2,height*3/8);
 textSize(width/5); fill(color(255,0,0));
 text(currentVal,width/2,height*4/8);
 textSize(width/30);
