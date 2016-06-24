@@ -49,7 +49,7 @@ println(address);
 
 function datapass(newData)
 {var newVal=newData.OfficeTemp;
-if(!isNaN(newVal)
+if(!newVal.equals("NaN"))
 {currentVal=newData.OfficeTemp;
 currentVal=round(float(currentVal),1);
 lastUpdated=newData.created_at;
