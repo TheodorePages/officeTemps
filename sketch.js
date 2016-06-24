@@ -45,7 +45,7 @@ function datapass(newData)
 var newVal=newData.OfficeTemp;
 if(!isNaN(newVal))
   {
-  curretnVal=newVal;
+  currentVal=newVal;
   lastUpdated=newData.created_at;
   var dateUpdated=lastUpdated.substring(0,10);
   lastUpdated=lastUpdated.substring(lastUpdated.length-9,lastUpdated.length-1);
