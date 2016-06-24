@@ -47,14 +47,14 @@ httpGet(address);
 
 function updateData()
 {
-var address="https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
+var address="http://data.theodoretech.com/OfficeTemp.json/?key=8385";//"https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
 loadJSON(address,datapass);
 println(address);
 }
 
 function datapass(newData)
 {
-currentVal=newData.field3;
+currentVal=newData.OfficeTemp;
 lastUpdated=newData.created_at;
 var dateUpdated=lastUpdated.substring(0,10);
 lastUpdated=lastUpdated.substring(lastUpdated.length-9,lastUpdated.length-1);
