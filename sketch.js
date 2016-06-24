@@ -57,6 +57,7 @@ if(!isNaN(newVal))
   lastUpdated=dateUpdated+" at " +(int(hourUpdated)+8-12)+":"+minUpdated+":"+secUpdated +" EST";
   //maxValue=newData.getColumn(1)[3];
   }
+else{lastUpdated="Not Updated")};
 }
 
 
