@@ -22,7 +22,7 @@ function draw()
 {
   background(255);
 fill(0);
-if(millis()-lastTimer>1000||lastTimer==0)
+if(millis()-lastTimer>2500||lastTimer==0)
 {
 updateData();
 lastTimer=millis();
@@ -47,7 +47,7 @@ httpGet(address);
 
 function updateData()
 {
-var address="http://data.theodoretech.com/OfficeTemp.json/?key=8385";//"https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
+var address="http://data.theodoretech.com/OfficeTemps.json/?key=8385";//"https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
 loadJSON(address,datapass);
 println(address);
 }
