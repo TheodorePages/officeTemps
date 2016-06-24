@@ -36,7 +36,7 @@ text("Last Updated: "+lastUpdated,width/6,height*5/8);
 function updateData()
 {
 var address="http://data.theodoretech.com/OfficeTemps.json/?key=8385";//"https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
-loadJSON(address,datapass,"json");
+loadJSON(address,datapass);
 println(address);
 }
 
