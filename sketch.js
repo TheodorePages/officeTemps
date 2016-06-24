@@ -30,16 +30,8 @@ textSize(width/5); fill(color(255,0,0));
 text(currentVal,width/2,height*4/8);
 textSize(width/30);
 text("Last Updated: "+lastUpdated,width/6,height*5/8);
-//text("Max Post: "+maxValue+"  from google Drive",width/2,height*3/4);
 }
 
-/*function mouseClicked()
-{var randomNumber=random(500000)/1000;
-lastValue=randomNumber;
-var address="api.thingspeak.com/update?key="+apiWriteKey+"&"+fieldKey+"="+randomNumber;
-println(address);
-httpGet(address);
-}*/
 
 function updateData()
 {
