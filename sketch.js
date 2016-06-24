@@ -50,17 +50,21 @@ println(address);
 
 function datapass(newData)
 {
-currentVal=newData.OfficeTemp;
-lastUpdated=newData.created_at;
-var dateUpdated=lastUpdated.substring(0,10);
-lastUpdated=lastUpdated.substring(lastUpdated.length-9,lastUpdated.length-1);
-println(lastUpdated);
-var hourUpdated=lastUpdated.substring(lastUpdated.length-8,lastUpdated.length-6);
-var minUpdated=lastUpdated.substring(lastUpdated.length-5,lastUpdated.length-3);
-var secUpdated=lastUpdated.substring(lastUpdated.length-2,lastUpdated.length);
-if(int(hourUpdated)>(8-12)){hourUpdated=int(hourUpdated)-12;}
-lastUpdated=dateUpdated+" at " +(int(hourUpdated)+8-12)+":"+minUpdated+":"+secUpdated +" EST";
-//maxValue=newData.getColumn(1)[3];
+var newVal=newData.OfficeTemp;
+if(!newVal.isNaN())
+  {
+  curretnVal=newVal;
+  lastUpdated=newData.created_at;
+  var dateUpdated=lastUpdated.substring(0,10);
+  lastUpdated=lastUpdated.substring(lastUpdated.length-9,lastUpdated.length-1);
+  println(lastUpdated);
+  var hourUpdated=lastUpdated.substring(lastUpdated.length-8,lastUpdated.length-6);
+  var minUpdated=lastUpdated.substring(lastUpdated.length-5,lastUpdated.length-3);
+  var secUpdated=lastUpdated.substring(lastUpdated.length-2,lastUpdated.length);
+  if(int(hourUpdated)>(8-12)){hourUpdated=int(hourUpdated)-12;}
+  lastUpdated=dateUpdated+" at " +(int(hourUpdated)+8-12)+":"+minUpdated+":"+secUpdated +" EST";
+  //maxValue=newData.getColumn(1)[3];
+  }
 }
 
 
