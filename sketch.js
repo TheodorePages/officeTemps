@@ -48,7 +48,7 @@ httpGet(address);
 function updateData()
 {
 var address="http://data.theodoretech.com/OfficeTemps.json/?key=8385";//"https://api.thingspeak.com/channels/"+channelId+"/feeds/last.json"
-loadJSON(address,datapass);
+loadJSON(address,datapass,"json");
 println(address);
 }
 
