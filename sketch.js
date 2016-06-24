@@ -2,12 +2,8 @@ var lastValue=0;
 var currentVal="0";
 var lastUpdated;
 var maxValue="0";
-var timer;
+var timer=0;
 var lastTimer=0;
-var apiWriteKey="CNGSFYF646TILD36";
-var apiReadKey="J2NQWW1E701TY241";
-var fieldKey="field1";
-var channelId="70693"
 function setup()
 {
 createCanvas(500, 800);
@@ -20,13 +16,13 @@ frameRate(100);
 
 function draw()
 {
-  background(255);
+background(255);
 fill(0);
 if(millis()-lastTimer>2500||lastTimer==0)
-{
-updateData();
-lastTimer=millis();
-}
+  {
+  updateData();
+  lastTimer=millis();
+  }
 //text("Just Posted: "+lastValue,width/2,height*1/4);
 textSize(width/50);
 text("Current Home Temperature\n ",width/2,height*3/8);
