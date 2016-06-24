@@ -43,7 +43,7 @@ println(address);
 function datapass(newData)
 {
 var newVal=newData.OfficeTemp;
-if(!newVal.isNaN())
+if(!newVal.equals("NaN"))
   {
   curretnVal=newVal;
   lastUpdated=newData.created_at;
