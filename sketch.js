@@ -42,7 +42,7 @@ text("Last Updated: \n"+lastUpdated,width/2,height*6/8);
 
 function updateData()
 {
-var address="http://data.theodoretech.com/OfficeTemps.json/?key=8385";
+var address="http://data.theodoretech.com/OfficeTemp.json/?key=8385";
 loadJSON(address,datapass);
 println(address);
 }
